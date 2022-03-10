@@ -11,7 +11,7 @@ export default class Core {
     private appName: string
   ) {
     this.cwd = join(cwd, appName)
-    this.FileWriter = new FileWriter(cwd)
+    this.FileWriter = new FileWriter(this.cwd)
   }
 
   async main(): Promise<number> {
