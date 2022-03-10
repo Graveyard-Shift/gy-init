@@ -6,6 +6,7 @@ const commonStyles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   },
+
   flex1: {
     flex: 1
   }

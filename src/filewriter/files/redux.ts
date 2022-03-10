@@ -35,10 +35,12 @@ export interface DummyState {
 
 export const dummySlice = createSlice({
   name: 'tabs',
+
   initialState: {
     dummyProp: [],
     dummyProp2: ''
   } as DummyState,
+
   reducers: {
     dummy: (state, action: PayloadAction<string>) => {
       state.dummyProp.push(action.payload)
